@@ -1,0 +1,10 @@
+nodemailer
+twilio
+axios
+@twilio/runtime-handler
+xmldom
+latest
+5.0.3
+latest
+2.0.3
+o. 6.0
