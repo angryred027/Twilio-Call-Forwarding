@@ -16,7 +16,14 @@ exports.handler = async function(context, event, callback) {
     console.log(event.number)
     console.log("Mode: " + item.data.mode)
 
-    return callback(null, { mode: item.data.mode });
+    return callback(null, { 
+      mode: item.data.mode, 
+      number_a: item.data.number_a, 
+      number_b: item.data.number_b, 
+      voicemail_to: item.data.owner_email,
+      record_call: item.data.record_call,
+      language: item.data.language,
+    });
   } catch (err) {
     console.error(err);
     return callback(null, { mode: "C" });

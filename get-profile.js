@@ -20,7 +20,8 @@ exports.handler = async function(context, event, callback) {
       phone_number: number,
       friendly_name: item.data.friendly_name || null,
       carrier: item.data.carrier || null,
-      company_name: item.data.company_name || null
+      company_name: item.data.company_name || null,
+      location: item.data.location || null,
     });
   } catch (err) {
     console.error("Sync Map fetch error:", err);
